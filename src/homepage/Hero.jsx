@@ -72,7 +72,10 @@ export default class Hero extends Component {
                 </a>
               </li>
             </ul>
-            <a href='mailto:you@gmail.com' className='emailBx'>
+            <a
+              href='mailto:aitoendviolenceagainstwomen@gmail.com'
+              className='emailBx'
+            >
               <img src={email} alt='' />
             </a>
           </div>
