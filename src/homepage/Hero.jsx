@@ -29,7 +29,7 @@ export default class Hero extends Component {
               boundaries. Artificial Intelligence is developing at an
               unprecedented speed and can be used to stop these atrocities.
             </p>
-            <a href='#' style={{ color: '#fff', fontWeight: 400 }}>
+            <a href='/' style={{ color: '#fff', fontWeight: 400 }}>
               Join Community
             </a>
           </div>
@@ -58,22 +58,22 @@ export default class Hero extends Component {
             <ul>
               <li>
                 <a href='https://www.linkedin.com/company/mahilai'>
-                  <img src={linkedin} style={{ width: '36px' }} />
+                  <img src={linkedin} style={{ width: '36px' }} alt='' />
                 </a>
               </li>
               <li>
                 <a href='https://instagram.com/mahil_ai?igshid=1qvw5ei27vke5'>
-                  <img src={instagram} />
+                  <img src={instagram} alt='' />
                 </a>
               </li>
               <li>
                 <a href='https://www.facebook.com/Mahilai-102738828507906/'>
-                  <img src={facebook} />
+                  <img src={facebook} alt='' />
                 </a>
               </li>
             </ul>
             <a href='mailto:you@gmail.com' className='emailBx'>
-              <img src={email} />
+              <img src={email} alt='' />
             </a>
           </div>
         </div>

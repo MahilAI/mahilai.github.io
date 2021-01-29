@@ -29,6 +29,7 @@ export default class CommingSoon extends Component {
             <img
               src={leftArrow}
               style={{ width: '30px', marginRight: '10px' }}
+              alt=''
             />
             back to home
           </Link>
