@@ -7,7 +7,7 @@ function App() {
     <Router>
       <div className='App'>
         <Switch>
-          <Route path='/' component={Hero} />
+          <Route exact path='/' component={Hero} />
           <Route path='/comingsoon' component={CommingSoon} />
           {/* <Hero /> */}
         </Switch>
