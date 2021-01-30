@@ -63,7 +63,7 @@ export const Hero = () => {
       .catch((error) => alert(error));
     setEmail('');
   };
-  const handleChange = (e) => {};
+  // const handleChange = (e) => {};
   return (
     <div>
       <section>
