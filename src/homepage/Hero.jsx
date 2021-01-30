@@ -212,12 +212,13 @@ export const Hero = () => {
                 height: '40px',
                 background: '#111',
                 border: 'none',
+                fontSize: '18px',
+                fontWeight: '700',
+                color: '#fff',
               }}
               type='submit'
             >
-              <p style={{ fontSize: '18px', fontWeight: '700', color: '#fff' }}>
-                Send
-              </p>
+              Send
             </button>
           </form>
         </Modal>
