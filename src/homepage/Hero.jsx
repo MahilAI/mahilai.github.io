@@ -172,6 +172,7 @@ export const Hero = () => {
             data-netlify='true'
             onSubmit='submit'
           >
+            <input type='hidden' name='form-name' value='join' />
             <input
               type='email'
               name='email'
@@ -204,7 +205,6 @@ export const Hero = () => {
               />
               <span className='checkmark'></span>
             </label>
-            <input type='hidden' name='form-name' value='join' />
 
             <button
               style={{
