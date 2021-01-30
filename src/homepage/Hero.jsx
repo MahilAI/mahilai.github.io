@@ -56,9 +56,9 @@ export const Hero = () => {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', email, newsletter }),
+      body: encode({ 'form-name': 'contact', emailAddress, newsletter }),
     })
-      .then(() => alert('Success!'))
+      .then(() => '/thank-you/')
       .catch((error) => alert(error));
     e.preventDefault();
   };
@@ -165,7 +165,7 @@ export const Hero = () => {
           <form
             style={{ display: 'grid', width: '100%' }}
             name='contact'
-            method='post'
+            method='POST'
             data-netlify='true'
             data-netlify-honeypot='bot-field'
             onSubmit={handleSubmit}
