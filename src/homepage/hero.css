@@ -265,3 +265,7 @@ section .content a {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.index_fullpage__2JorV .index_content__6TMNN h1 {
+  margin-bottom: -80px;
+}

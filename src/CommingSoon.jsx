@@ -3,6 +3,7 @@ import ComingSoon from 'react-coming-soon';
 import { Link } from 'react-router-dom';
 import leftArrow from './homepage/assets/left-arrow.png';
 import cs from './homepage/assets/comingsoon.jpg';
+import under from './homepage/assets/under.png';
 
 export default class CommingSoon extends Component {
   render() {
@@ -12,8 +13,9 @@ export default class CommingSoon extends Component {
           image={cs}
           bgColor='#111'
           textColor='#fff'
-          illustration='development'
+          // illustration='development'
         >
+          <img src={under} alt='' />
           <Link
             to='/'
             style={{

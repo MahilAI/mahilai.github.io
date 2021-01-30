@@ -90,7 +90,7 @@ export const Hero = () => {
       <div className='navigation'>
         <ul>
           <li>
-            <a href='/comingsoon'>Home</a>
+            <a href='/'>Home</a>
           </li>
           <li>
             <a href='/comingsoon'>About</a>
