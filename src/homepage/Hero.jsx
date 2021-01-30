@@ -23,11 +23,11 @@ const customStyles = {
     minWidth: '300px',
   },
 };
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
+// const encode = (data) => {
+//   return Object.keys(data)
+//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+//     .join('&');
+// };
 export const Hero = () => {
   const toggleMenu = () => {
     var menu = document.querySelector('.menuToggle');
@@ -53,17 +53,17 @@ export const Hero = () => {
     setIsOpen(false);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', emailAddress, newsletter }),
-    })
-      .then(() => alert('success'))
-      .catch((error) => alert(error));
-    setEmail('');
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({ 'form-name': 'contact', emailAddress, newsletter }),
+  //   })
+  //     .then(() => alert('success'))
+  //     .catch((error) => alert(error));
+  //   setEmail('');
+  // };
   // const handleChange = (e) => {};
   return (
     <div>
@@ -167,11 +167,10 @@ export const Hero = () => {
           </div>
           <form
             style={{ display: 'grid', width: '100%' }}
-            name='contact'
+            name='join'
             method='post'
             data-netlify='true'
-            onSubmit={handleSubmit}
-            action='/contact'
+            onSubmit='submit'
           >
             <input
               type='email'
@@ -205,7 +204,7 @@ export const Hero = () => {
               />
               <span className='checkmark'></span>
             </label>
-            <input type='hidden' name='form-name' value='contact' />
+            <input type='hidden' name='form-name' value='join' />
 
             <button
               style={{
