@@ -53,6 +53,7 @@ export const Hero = () => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -60,8 +61,9 @@ export const Hero = () => {
     })
       .then(() => '/thank-you/')
       .catch((error) => alert(error));
-    e.preventDefault();
+    setEmail('');
   };
+  const handleChange = (e) => {};
   return (
     <div>
       <section>
@@ -163,6 +165,7 @@ export const Hero = () => {
             </button>
           </div>
           <form
+            netlify
             style={{ display: 'grid', width: '100%' }}
             name='contact'
             method='POST'
@@ -193,6 +196,7 @@ export const Hero = () => {
               choose to subscribe to email for upcoming events
               <input
                 type='checkbox'
+                name='newsletter'
                 value={newsletter}
                 onChange={(e) => setNewsletter(e.target.value)}
               />
