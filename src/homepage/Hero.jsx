@@ -202,7 +202,7 @@ export const Hero = () => {
               />
               <span class='checkmark'></span>
             </label>
-            <input type='hidden' name='form-name' value='contact' />
+            <input type='hidden' name='contact' value='contact' />
 
             <button
               style={{
