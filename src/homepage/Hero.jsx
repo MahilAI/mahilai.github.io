@@ -8,7 +8,7 @@ import email from './assets/email.png';
 import linkedin from './assets/linkedin.png';
 import Modal from 'react-modal';
 import closeButton from './assets/close.png';
-import { navigate } from 'react-router-dom';
+// import { navigate } from 'react-router-dom';
 
 const customStyles = {
   content: {
@@ -53,17 +53,17 @@ export const Hero = () => {
     setIsOpen(false);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', emailAddress, newsletter }),
-    })
-      .then(() => '/thank-you/')
-      .catch((error) => alert(error));
-    setEmail('');
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({ 'form-name': 'contact', emailAddress, newsletter }),
+  //   })
+  //     .then(() => alert('success'))
+  //     .catch((error) => alert(error));
+  //   setEmail('');
+  // };
   // const handleChange = (e) => {};
   return (
     <div>
@@ -170,7 +170,8 @@ export const Hero = () => {
             name='contact'
             method='post'
             data-netlify='true'
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
+            action='/contact'
           >
             <input
               type='email'
