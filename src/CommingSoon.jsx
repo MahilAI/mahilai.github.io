@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import ComingSoon from 'react-coming-soon';
 import { Link } from 'react-router-dom';
 import leftArrow from './homepage/assets/left-arrow.png';
+import cs from './homepage/assets/comingsoon.jpg';
 
 export default class CommingSoon extends Component {
   render() {
     return (
       <div>
         <ComingSoon
-          image='https://react-coming-soon.maksv.me/default-image.jpeg'
+          image={cs}
           bgColor='#111'
           textColor='#fff'
           illustration='development'
