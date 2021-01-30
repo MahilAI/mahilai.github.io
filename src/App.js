@@ -1,4 +1,4 @@
-import Hero from './homepage/Hero';
+import { Hero } from './homepage/Hero';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CommingSoon from './CommingSoon';
 
