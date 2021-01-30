@@ -37,8 +37,8 @@ export const Hero = () => {
   };
   var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [emailAddress, setEmail] = useState('');
-  const [newsletter, setNewsletter] = useState(false);
+  // const [emailAddress, setEmail] = useState('');
+  // const [newsletter, setNewsletter] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
@@ -183,8 +183,8 @@ export const Hero = () => {
                 fontSize: '16px',
                 marginBottom: '10px',
               }}
-              value={emailAddress}
-              onChange={(e) => setEmail(e.target.value)}
+              // value={emailAddress}
+              // onChange={(e) => setEmail(e.target.value)}
             />
             <label class='container'>
               Agree to T&C
@@ -198,10 +198,10 @@ export const Hero = () => {
                 required
                 type='checkbox'
                 name='newsletter'
-                value={newsletter}
-                onChange={() => {
-                  setNewsletter(!newsletter);
-                }}
+                // value={newsletter}
+                // onChange={() => {
+                //   setNewsletter(!newsletter);
+                // }}
               />
               <span className='checkmark'></span>
             </label>
