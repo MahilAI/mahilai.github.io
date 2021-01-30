@@ -8,6 +8,7 @@ import email from './assets/email.png';
 import linkedin from './assets/linkedin.png';
 import Modal from 'react-modal';
 import closeButton from './assets/close.png';
+import { navigate } from 'react-router-dom';
 
 const customStyles = {
   content: {
@@ -165,12 +166,10 @@ export const Hero = () => {
             </button>
           </div>
           <form
-            netlify
             style={{ display: 'grid', width: '100%' }}
             name='contact'
-            method='POST'
+            method='post'
             data-netlify='true'
-            data-netlify-honeypot='bot-field'
             onSubmit={handleSubmit}
           >
             <input
@@ -189,20 +188,23 @@ export const Hero = () => {
             <label class='container'>
               Agree to T&C
               <input type='checkbox' checked='checked' />
-              <span class='checkmark'></span>
+              <span className='checkmark'></span>
             </label>
 
-            <label class='container'>
+            <label className='container'>
               choose to subscribe to email for upcoming events
               <input
+                required
                 type='checkbox'
                 name='newsletter'
                 value={newsletter}
-                onChange={(e) => setNewsletter(e.target.value)}
+                onChange={() => {
+                  setNewsletter(!newsletter);
+                }}
               />
-              <span class='checkmark'></span>
+              <span className='checkmark'></span>
             </label>
-            <input type='hidden' name='contact' value='contact' />
+            <input type='hidden' name='form-name' value='contact' />
 
             <button
               style={{
