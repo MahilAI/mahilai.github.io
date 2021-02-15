@@ -186,7 +186,6 @@ export const Hero = () => {
                 color: '#fff',
               }}
               type='submit'
-              disabled
             >
               Send
             </button>
