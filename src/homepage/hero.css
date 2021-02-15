@@ -34,7 +34,8 @@ section .bg {
   top: 0;
   right: 0;
   height: 100%;
-  max-width: 750px;
+  max-width: 1000px;
+  /* min-width: 500px; */
 }
 
 section .content {

@@ -8,7 +8,6 @@ import email from './assets/email.png';
 import linkedin from './assets/linkedin.png';
 import Modal from 'react-modal';
 import closeButton from './assets/close.png';
-// import { navigate } from 'react-router-dom';
 
 const customStyles = {
   content: {
@@ -23,11 +22,7 @@ const customStyles = {
     minWidth: '300px',
   },
 };
-// const encode = (data) => {
-//   return Object.keys(data)
-//     .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-//     .join('&');
-// };
+
 export const Hero = () => {
   const toggleMenu = () => {
     var menu = document.querySelector('.menuToggle');
@@ -37,8 +32,6 @@ export const Hero = () => {
   };
   var subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-  // const [emailAddress, setEmail] = useState('');
-  // const [newsletter, setNewsletter] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
@@ -52,19 +45,6 @@ export const Hero = () => {
   const closeModal = () => {
     setIsOpen(false);
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: encode({ 'form-name': 'contact', emailAddress, newsletter }),
-  //   })
-  //     .then(() => alert('success'))
-  //     .catch((error) => alert(error));
-  //   setEmail('');
-  // };
-  // const handleChange = (e) => {};
   return (
     <div>
       <section>
@@ -168,10 +148,8 @@ export const Hero = () => {
           <form
             style={{ display: 'grid', width: '100%' }}
             name='join'
-            method='post'
+            method='POST'
             data-netlify='true'
-            onSubmit='submit'
-            netlify-honeypot='bot-field'
           >
             <input type='hidden' name='form-name' value='join' />
             <input
@@ -184,8 +162,6 @@ export const Hero = () => {
                 fontSize: '16px',
                 marginBottom: '10px',
               }}
-              // value={emailAddress}
-              // onChange={(e) => setEmail(e.target.value)}
             />
             <label class='container'>
               Agree to T&C
@@ -195,15 +171,7 @@ export const Hero = () => {
 
             <label className='container'>
               choose to subscribe to email for upcoming events
-              <input
-                required
-                type='checkbox'
-                name='newsletter'
-                // value={newsletter}
-                // onChange={() => {
-                //   setNewsletter(!newsletter);
-                // }}
-              />
+              <input required type='checkbox' name='newsletter' />
               <span className='checkmark'></span>
             </label>
 
