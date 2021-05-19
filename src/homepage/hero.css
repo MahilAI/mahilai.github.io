@@ -1,272 +1,280 @@
 @import url('https://fonts.googlepapis.com/css?family=/"Poppins/":200,300,400,500,600,700,800,900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Poppins;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
 }
 
 body {
-  background: #111;
+	background: #111;
 }
+
 section {
-  position: relative;
-  padding: 100px;
-  display: flex;
-  justify-content: flex start;
-  align-items: center;
-  min-height: 100vh;
+	position: relative;
+	padding: 100px;
+	display: flex;
+	justify-content: flex start;
+	align-items: center;
+	min-height: 100vh;
+	/* background: #111; */
 }
 
 section .logo {
-  position: fixed;
-  top: 30px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 2em;
-  z-index: 100;
-  cursor: pointer;
+	position: fixed;
+	top: 30px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	z-index: 100;
+	cursor: pointer;
 }
 
 section .bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  max-width: 1000px;
-  /* min-width: 500px; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	max-width: 1000px;
+	/* min-width: 500px; */
 }
 
 section .content {
-  position: relative;
-  max-width: 500px;
-  /* z-index: 1; */
+	position: relative;
+	max-width: 500px;
+	/* z-index: 1; */
 }
 
 section .content h2 {
-  color: #fff;
-  position: relative;
-  font-size: 3em;
-  font-weight: 700;
-  line-height: 1.1em;
+	color: #fff;
+	position: relative;
+	font-size: 3em;
+	font-weight: 700;
+	line-height: 1.1em;
 }
 section .content p {
-  color: #fff;
-  font-size: 1.1em;
-  margin: 20px 0 10px;
+	color: #fff;
+	font-size: 1.1em;
+	margin: 20px 0 10px;
 }
 
 section .content a {
-  color: #222;
-  background: #ed235c;
-  font-size: 1em;
-  margin: 20px 0;
-  font-weight: 500;
-  padding: 10px 30px;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
+	color: #222;
+	background: #ed235c;
+	font-size: 1em;
+	margin: 20px 0;
+	font-weight: 500;
+	padding: 10px 30px;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .copyrightText {
-  position: absolute;
-  bottom: 20px;
-  color: #fff;
-  font-size: 1.1em;
-  margin: 20px 0 10px;
+	position: absolute;
+	bottom: 20px;
+	color: #fff;
+	font-size: 1.1em;
+	margin: 20px 0 10px;
 }
 
 .menuToggle {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background: #ed235c url('./assets/menu.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 30px;
-  cursor: pointer;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background: #ed235c url('./assets/menu.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px;
+	cursor: pointer;
+	z-index: 1000;
 }
 
 .menuToggle.active {
-  background: #ed235c url('./assets/close.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 25px;
+	background: #ed235c url('./assets/close.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
 }
 
 .navigation {
-  position: fixed;
-  top: 0;
-  left: calc(100% - 50px);
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.2s;
+	position: fixed;
+	top: 0;
+	left: calc(100% - 50px);
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
 }
 
 .navigation.active {
-  left: 0;
+	left: 0;
 }
 
 .navigation ul {
-  position: relative;
+	position: relative;
 }
 
 .navigation ul li {
-  position: relative;
-  list-style: none;
-  text-align: center;
+	position: relative;
+	list-style: none;
+	text-align: center;
 }
 
 .navigation ul li a {
-  font-size: 2.4em;
-  color: #111;
-  text-decoration: none;
-  font-weight: 300;
+	font-size: 2.4em;
+	color: #111;
+	text-decoration: none;
+	font-weight: 300;
 }
 
 .navigation ul li a:hover {
-  color: #ed235c;
+	color: #ed235c;
 }
 
 .socialBar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 100%;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .socialBar ul {
-  position: relative;
+	position: relative;
 }
 
 .socialBar ul li {
-  position: relative;
-  list-style: none;
+	position: relative;
+	list-style: none;
 }
 
 .socialBar ul li a {
-  position: relative;
-  display: inline-block;
-  transform: scale(0.6);
+	position: relative;
+	display: inline-block;
+	transform: scale(0.6);
 }
 
 .socialBar .emailBx {
-  position: absolute;
-  bottom: 20px;
-  transform: scale(0.6);
+	position: absolute;
+	bottom: 20px;
+	transform: scale(0.6);
 }
 
 @media (max-width: 767px) {
-  section {
-    padding: 100px 40px;
-  }
-  section .content h2 {
-    font-size: 2.5em;
-  }
-  .navigation {
-    left: 100%;
-  }
-  section .bg {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-  }
-  section .logo {
-    top: 10px;
-    font-size: 1.5em;
-  }
-  .navigation ul li a {
-    font-size: 2em;
-  }
-  .ReactModal__Content {
-    width: 100%;
-  }
+	section {
+		padding: 100px 40px;
+	}
+	section .content h2 {
+		font-size: 2.5em;
+	}
+	.navigation {
+		left: 100%;
+	}
+	section .bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.5;
+	}
+	section .logo {
+		top: 10px;
+		font-size: 1.5em;
+	}
+	.navigation ul li a {
+		font-size: 2em;
+	}
+	.ReactModal__Content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1000px) {
+	section .bg {
+		opacity: 0.5;
+	}
 }
 
 .container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: #eee;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+	background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #ed235c;
+	background-color: #ed235c;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: '';
-  position: absolute;
-  display: none;
+	content: '';
+	position: absolute;
+	display: none;
 }
 
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
-  display: block;
+	display: block;
 }
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .index_fullpage__2JorV .index_content__6TMNN h1 {
-  margin-bottom: -80px;
+	margin-bottom: -80px;
 }
