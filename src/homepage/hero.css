@@ -15,7 +15,7 @@ section {
 	position: relative;
 	padding: 100px;
 	display: flex;
-	justify-content: flex start;
+	justify-content: flex-start;
 	align-items: center;
 	min-height: 100vh;
 	/* background: #111; */
@@ -36,13 +36,14 @@ section .bg {
 	top: 0;
 	right: 0;
 	height: 100%;
-	max-width: 1000px;
+	width: 60vw;
+	transition: 0.2s ease-out;
 	/* min-width: 500px; */
 }
 
 section .content {
 	position: relative;
-	max-width: 500px;
+	width: 500px;
 	/* z-index: 1; */
 }
 
@@ -206,9 +207,10 @@ section .content a {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1600px) {
 	section .bg {
 		opacity: 0.5;
+		width: 100vw;
 	}
 }
 

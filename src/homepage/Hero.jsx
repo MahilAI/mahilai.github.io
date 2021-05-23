@@ -48,6 +48,7 @@ export const Hero = () => {
 		<div>
 			<section>
 				<div className='logo'>MahilAI</div>
+
 				<img src={heroImage} alt='' className='bg' />
 				<div className='content'>
 					<h2>Our Mission</h2>
@@ -58,7 +59,12 @@ export const Hero = () => {
 						create solutions for Violence Against Women. To this aim, we conduct
 						workshops and have a incubator process coming soon! Stay tuned!
 					</p>
-					<a style={{ color: '#fff', fontWeight: 400 }} onClick={openModal}>
+					<a
+						style={{ color: '#fff', fontWeight: 400 }}
+						href='https://discord.gg/gnPhXybhxX'
+						target='_blank'
+						rel='noreferrer'
+					>
 						Join Community
 					</a>
 					<p
@@ -102,11 +108,6 @@ export const Hero = () => {
 								<img src={instagram} alt='' />
 							</a>
 						</li>
-						{/* <li>
-							<a href='https://www.facebook.com/Mahilai-102738828507906/'>
-								<img src={facebook} alt='' />
-							</a>
-						</li> */}
 					</ul>
 					<a
 						href='mailto:aitoendviolenceagainstwomen@gmail.com'
@@ -155,34 +156,34 @@ export const Hero = () => {
 						name='join'
 						method='POST'
 						data-netlify='true'
-					>
+						>
 						<input type='hidden' name='form-name' value='join' />
 						<input
-							type='email'
-							name='email'
-							required
-							style={{
-								width: '100%',
-								height: '40px',
-								padding: '5px',
-								fontSize: '16px',
-								marginBottom: '10px',
-							}}
+						type='email'
+						name='email'
+						required
+						style={{
+							width: '100%',
+							height: '40px',
+							padding: '5px',
+							fontSize: '16px',
+							marginBottom: '10px',
+						}}
 						/>
 						<label class='container'>
-							Agree to T&C
-							<input type='checkbox' checked='checked' />
-							<span className='checkmark'></span>
+						Agree to T&C
+						<input type='checkbox' checked='checked' />
+						<span className='checkmark'></span>
 						</label>
-
+						
 						<label className='container'>
-							choose to subscribe to email for upcoming events
-							<input type='checkbox' name='newsletter' />
-							<span className='checkmark'></span>
+						choose to subscribe to email for upcoming events
+						<input type='checkbox' name='newsletter' />
+						<span className='checkmark'></span>
 						</label>
-
+						
 						<button
-							style={{
+						style={{
 								width: '100%',
 								height: '40px',
 								background: '#111',
@@ -192,10 +193,10 @@ export const Hero = () => {
 								color: '#fff',
 							}}
 							type='submit'
-						>
+							>
 							Send
-						</button>
-					</form> */}
+							</button>
+						</form> */}
 					<div style={{ padding: '10px' }}>
 						<ul>
 							<li> Be kind to each other.</li>
