@@ -203,7 +203,7 @@ export const Hero = () => {
 								No one is here for hatred, and if you're found spreading hate on
 								the server, you will be banned.
 							</li>
-							<li>.No NSFW / sexually explicit content or language </li>
+							<li>No NSFW / sexually explicit content or language </li>
 							<li>
 								If you are one of two users dominating the conversation in a
 								channel, please consider moving your conversation to Direct
