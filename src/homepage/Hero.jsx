@@ -62,6 +62,13 @@ export const Hero = () => {
 					<a style={{ color: '#fff', fontWeight: 400 }} onClick={openModal}>
 						Join Community
 					</a>
+					<p
+						className='tac'
+						style={{ margin: 0, fontSize: '14px' }}
+						onClick={openModal}
+					>
+						Terms and Conditions*
+					</p>
 				</div>
 				<p className='copyrightText'>@2021. MahilAI</p>
 			</section>
@@ -78,7 +85,7 @@ export const Hero = () => {
 						<a href='/comingsoon'>Projects</a>
 					</li>
 					<li>
-						<a href='/comingsoon '>Team</a>
+						<a href='/team '>Team</a>
 					</li>
 					<li>
 						<a href='/comingsoon'>Contact</a>
@@ -125,7 +132,7 @@ export const Hero = () => {
 						}}
 					>
 						<h2 ref={(_subtitle) => (subtitle = _subtitle)}>
-							Join Our Community
+							Terms and Conditions
 						</h2>
 						<button
 							onClick={closeModal}
@@ -144,7 +151,7 @@ export const Hero = () => {
 							/>
 						</button>
 					</div>
-					<form
+					{/* <form
 						style={{ display: 'grid', width: '100%' }}
 						name='join'
 						method='POST'
@@ -189,7 +196,30 @@ export const Hero = () => {
 						>
 							Send
 						</button>
-					</form>
+					</form> */}
+					<div style={{ padding: '10px' }}>
+						<ul>
+							<li> Be kind to each other.</li>
+							<li>
+								No one is here for hatred, and if you're found spreading hate on
+								the server, you will be banned.
+							</li>
+							<li>.No NSFW / sexually explicit content or language </li>
+							<li>
+								If you are one of two users dominating the conversation in a
+								channel, please consider moving your conversation to Direct
+								Messages.
+							</li>
+							<li>
+								If someone says something that offends them, report the message
+								to the Support team immediately
+							</li>
+							<li>
+								No public fighting. Disagreements should remain respectful of
+								one another's views. Thank you!
+							</li>
+						</ul>
+					</div>
 				</Modal>
 			</div>
 		</div>

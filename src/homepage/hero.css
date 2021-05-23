@@ -59,6 +59,10 @@ section .content p {
 	margin: 20px 0 10px;
 }
 
+section .content .tac {
+	cursor: pointer;
+}
+
 section .content a {
 	color: #222;
 	background: #ed235c;
