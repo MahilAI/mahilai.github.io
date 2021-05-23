@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import heroImage from './assets/AVAW55.png';
 import './hero.css';
-import facebook from './assets/facebook.png';
 import instagram from './assets/instagram.png';
 import email from './assets/email.png';
 import linkedin from './assets/linkedin.png';
