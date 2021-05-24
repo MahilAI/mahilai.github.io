@@ -49,7 +49,8 @@ export const Hero = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		window.location.href('https://discord.gg/gnPhXybhxX');
+		let link = 'https://discord.gg/gnPhXybhxX';
+		window.location.href = link;
 	};
 	return (
 		<div>
