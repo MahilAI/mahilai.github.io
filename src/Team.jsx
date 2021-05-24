@@ -115,7 +115,7 @@ const Team = () => {
 				<div className='column'>
 					<div className='card'>
 						<div className='teamContainer'>
-							<h2>ROHAN N KALPAVRUKSHA</h2>
+							<h2>ROSHAN N KALPAVRUKSHA</h2>
 							<p className='title'>COMMUNITY OUTREACH LEAD</p>
 							<p>
 								<a
