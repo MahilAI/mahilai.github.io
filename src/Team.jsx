@@ -1,9 +1,32 @@
 import React from 'react';
 import './team.css';
+import { Link } from 'react-router-dom';
+import leftArrow from './homepage/assets/left-arrow.png';
 
 const Team = () => {
 	return (
 		<div>
+			<Link
+				to='/'
+				style={{
+					marginTop: '30px',
+					background: 'transparent',
+					textDecoration: 'none',
+					color: '#fff',
+					fontSize: '1.4em',
+					fontWeight: '300',
+					display: 'flex',
+					justifyContent: 'center',
+					flexWrap: 'nowrap',
+				}}
+			>
+				<img
+					src={leftArrow}
+					style={{ width: '30px', marginRight: '10px' }}
+					alt=''
+				/>
+				back to home
+			</Link>
 			<h1 className='team-title'>MEET OUR TEAM</h1>
 			<div
 				className='row'
@@ -21,7 +44,7 @@ const Team = () => {
 								>
 									<button className='button'>Contact</button>
 								</a>
-						</p>
+							</p>
 						</div>
 					</div>
 				</div>
