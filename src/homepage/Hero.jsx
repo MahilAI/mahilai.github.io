@@ -225,7 +225,7 @@ export const Hero = () => {
 							}}
 							type='submit'
 						>
-							Send
+							JOIN
 						</button>
 					</form>
 				</Modal>
