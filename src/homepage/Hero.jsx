@@ -14,11 +14,12 @@ const customStyles = {
 		left: '50%',
 		right: 'auto',
 		bottom: 'auto',
-		marginRight: '-50%',
+		// marginRight: '-50%',
 		transform: 'translate(-50%, -50%)',
 		// zIndex: ,
 		maxWidth: '600px',
 		minWidth: '300px',
+		// margin: '5px',
 	},
 };
 
@@ -44,6 +45,12 @@ export const Hero = () => {
 	const closeModal = () => {
 		setIsOpen(false);
 	};
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+
+		window.location.href('https://discord.gg/gnPhXybhxX');
+	};
 	return (
 		<div>
 			<section>
@@ -53,27 +60,16 @@ export const Hero = () => {
 				<div className='content'>
 					<h2>Our Mission</h2>
 					<p>
-						Welcome to MahilAI. We are a community of tech enthusiasts who want
-						to use our powers for good! MahilAI aims to use the powerful
-						technologies of Artificial Intelligence and Machine Learning to
-						create solutions for Violence Against Women. To this aim, we conduct
-						workshops and have a incubator process coming soon! Stay tuned!
+						One in every three women has experienced abuse.
+						<br /> It can be in the form of physical, sexual, domestic abuse,
+						and so many more ways. Not only are they abused but are also
+						rendered responsible. This is a global crisis and knows no
+						boundaries. Artificial Intelligence is developing at an
+						unprecedented speed and can be used to stop these atrocities.
 					</p>
-					<a
-						style={{ color: '#fff', fontWeight: 400 }}
-						href='https://discord.gg/gnPhXybhxX'
-						target='_blank'
-						rel='noreferrer'
-					>
+					<a style={{ color: '#fff', fontWeight: 400 }} onClick={openModal}>
 						Join Community
 					</a>
-					<p
-						className='tac'
-						style={{ margin: 0, fontSize: '14px' }}
-						onClick={openModal}
-					>
-						Terms and Conditions*
-					</p>
 				</div>
 				<p className='copyrightText'>@2021. MahilAI</p>
 			</section>
@@ -146,7 +142,7 @@ export const Hero = () => {
 						>
 							<img
 								src={closeButton}
-								style={{ width: '20px', height: '20px', padding: '4px' }}
+								style={{ width: '100%', padding: '6px' }}
 								alt=''
 							/>
 						</button>
@@ -170,11 +166,7 @@ export const Hero = () => {
 							marginBottom: '10px',
 						}}
 						/>
-						<label class='container'>
-						Agree to T&C
-						<input type='checkbox' checked='checked' />
-						<span className='checkmark'></span>
-						</label>
+						
 						
 						<label className='container'>
 						choose to subscribe to email for upcoming events
@@ -182,21 +174,8 @@ export const Hero = () => {
 						<span className='checkmark'></span>
 						</label>
 						
-						<button
-						style={{
-								width: '100%',
-								height: '40px',
-								background: '#111',
-								border: 'none',
-								fontSize: '18px',
-								fontWeight: '700',
-								color: '#fff',
-							}}
-							type='submit'
-							>
-							Send
-							</button>
-						</form> */}
+					</form> */}
+
 					<div style={{ padding: '10px' }}>
 						<ul>
 							<li> Be kind to each other.</li>
@@ -220,6 +199,35 @@ export const Hero = () => {
 							</li>
 						</ul>
 					</div>
+					<form
+						onSubmit={handleSubmit}
+						style={{
+							display: 'flex',
+							justifyContent: 'space-between',
+							alignItems: 'center',
+						}}
+					>
+						<label class='container'>
+							Agree to T&C
+							<input type='checkbox' required />
+							<span className='checkmark'></span>
+						</label>
+						<button
+							style={{
+								width: '80px',
+								float: 'right',
+								height: '40px',
+								background: '#111',
+								border: 'none',
+								fontSize: '18px',
+								fontWeight: '700',
+								color: '#fff',
+							}}
+							type='submit'
+						>
+							Send
+						</button>
+					</form>
 				</Modal>
 			</div>
 		</div>

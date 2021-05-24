@@ -21,7 +21,7 @@ const Team = () => {
 								>
 									<button className='button'>Contact</button>
 								</a>
-							</p>
+						</p>
 						</div>
 					</div>
 				</div>

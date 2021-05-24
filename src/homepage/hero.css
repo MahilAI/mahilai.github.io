@@ -37,7 +37,7 @@ section .bg {
 	right: 0;
 	height: 100%;
 	width: 60vw;
-	transition: 0.2s ease-out;
+	/* transition: 0.2s ease-out; */
 	/* min-width: 500px; */
 }
 
@@ -239,11 +239,11 @@ section .content a {
 /* Create a custom checkbox */
 .checkmark {
 	position: absolute;
-	top: 0;
+	top: 4px;
 	left: 0;
 	height: 18px;
 	width: 18px;
-	background-color: #eee;
+	background-color: #333;
 }
 
 /* On mouse-over, add a grey background color */
