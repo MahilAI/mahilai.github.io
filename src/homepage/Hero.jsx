@@ -80,7 +80,7 @@ export const Hero = () => {
 						<a href='/'>Home</a>
 					</li>
 					<li>
-						<a href='/comingsoon'>About</a>
+						<a href='/aboutus'>About</a>
 					</li>
 					<li>
 						<a href='/comingsoon'>Projects</a>

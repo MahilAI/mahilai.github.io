@@ -1,3 +1,19 @@
 .aboutus {
-	max-width: 1200px;
+	margin-top: 25px;
+	text-align: center;
+	padding: 15px;
+}
+
+.aboutus h2 {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	color: #ed235c;
+}
+
+.aboutus p {
+	font-size: 22px;
+	margin-top: 40px;
+	padding: '20px';
+	color: #fff;
 }
