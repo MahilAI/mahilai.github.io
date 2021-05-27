@@ -131,12 +131,12 @@ const Team = () => {
 				<div className='column'>
 					<div className='card'>
 						<div className='teamContainer'>
-							<h2>SAARIM</h2>
+							<h2>SAARIM KHURSHEED</h2>
 							<p className='title'>LOGISTICS LEAD</p>
 							<p>
 								<a
 									style={{ textDecoration: 'none', color: '#fff' }}
-									href='mailto:poorvisameepkunja@pesu.pes.edu'
+									href='mailto:saarim2409@gmail.com'
 								>
 									<button className='button'>Contact</button>
 								</a>
