@@ -131,7 +131,7 @@ const Team = () => {
 				<div className='column'>
 					<div className='card'>
 						<div className='teamContainer'>
-							<h2>POORVI KUNJA</h2>
+							<h2>SAARIM</h2>
 							<p className='title'>LOGISTICS LEAD</p>
 							<p>
 								<a
