@@ -1,12 +1,12 @@
 import { Hero } from './homepage/Hero';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import CommingSoon from './CommingSoon';
 import Team from './Team';
 import About from './About';
 
 function App() {
 	return (
-		<Router basename={process.env.PUBLIC_URL}>
+		<Router >
 			<div className='App'>
 				<Switch>
 					<Route exact path='/' component={Hero} />
