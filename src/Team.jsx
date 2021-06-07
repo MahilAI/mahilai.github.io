@@ -104,7 +104,7 @@ const Team = () => {
 							<p>
 								<a
 									style={{ textDecoration: 'none', color: '#fff' }}
-									href='mailto:fasdf@fasdf.com'
+									href='mailto:afifahmed456123@gmail.com'
 								>
 									<button className='button'>Contact</button>
 								</a>

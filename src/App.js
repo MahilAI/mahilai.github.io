@@ -6,7 +6,7 @@ import About from './About';
 
 function App() {
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<div className='App'>
 				<Switch>
 					<Route exact path='/' component={Hero} />
@@ -15,7 +15,7 @@ function App() {
 					<Route exact path='/aboutus' component={About} />
 				</Switch>
 			</div>
-		</Router>
+		</ Router>
 	);
 }
 
