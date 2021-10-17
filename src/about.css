@@ -5,15 +5,16 @@
 }
 
 .aboutus h2 {
-	font-size: 40px;
+	font-size: 4rem;
+	text-transform: uppercase;
 	font-weight: 700;
 	text-align: center;
 	color: #ed235c;
 }
 
 .aboutus p {
-	font-size: 22px;
+	font-size: 24px;
 	margin-top: 40px;
-	padding: '20px';
+	padding: "20px";
 	color: #fff;
 }

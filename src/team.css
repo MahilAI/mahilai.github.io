@@ -24,7 +24,8 @@
 .card {
 	padding: 30px 20px 10px 20px;
 	background: #222;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
 }
 
 .teamContainer {
@@ -42,7 +43,7 @@
 
 .teamContainer::after,
 .row::after {
-	content: '';
+	content: "";
 	clear: both;
 	display: table;
 }

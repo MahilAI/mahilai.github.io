@@ -1,8 +1,9 @@
 import { Hero } from './homepage/Hero';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CommingSoon from './CommingSoon';
 import Team from './Team';
 import About from './About';
+import ContactUs from './ContactUs';
 
 function App() {
 	return (
@@ -10,9 +11,10 @@ function App() {
 			<div className='App'>
 				<Switch>
 					<Route exact path='/' component={Hero} />
-					<Route exact path='/comingsoon' component={CommingSoon} />
-					<Route exact path='/team' component={Team} />
-					<Route exact path='/aboutus' component={About} />
+					<Route path='/comingsoon' component={CommingSoon} />
+					<Route path='/team' component={Team} />
+					<Route path='/aboutus' component={About} />
+					<Route path='/contactus' component={ContactUs} />
 				</Switch>
 			</div>
 		</ Router>

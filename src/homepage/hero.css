@@ -26,7 +26,7 @@ section .logo {
 	top: 30px;
 	color: #fff;
 	font-weight: 700;
-	font-size: 2em;
+	font-size: 2.5em;
 	z-index: 100;
 	cursor: pointer;
 }
@@ -43,7 +43,7 @@ section .bg {
 
 section .content {
 	position: relative;
-	width: 500px;
+	width: 540px;
 	/* z-index: 1; */
 }
 
@@ -56,7 +56,7 @@ section .content h2 {
 }
 section .content p {
 	color: #fff;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	margin: 20px 0 10px;
 }
 
@@ -90,7 +90,7 @@ section .content a {
 	right: 0;
 	width: 50px;
 	height: 50px;
-	background: #ed235c url('./assets/menu.png');
+	background: #ed235c url("./assets/menu.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30px;
@@ -99,7 +99,7 @@ section .content a {
 }
 
 .menuToggle.active {
-	background: #ed235c url('./assets/close.png');
+	background: #ed235c url("./assets/close.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25px;
@@ -111,7 +111,7 @@ section .content a {
 	left: calc(100% - 50px);
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: #222;
 	z-index: 999;
 	display: flex;
 	align-items: center;
@@ -134,10 +134,11 @@ section .content a {
 }
 
 .navigation ul li a {
-	font-size: 2.4em;
-	color: #111;
+	font-size: 3rem;
+	color: #fff;
 	text-decoration: none;
 	font-weight: 300;
+	text-transform: uppercase;
 }
 
 .navigation ul li a:hover {
@@ -154,6 +155,7 @@ section .content a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .socialBar ul {
@@ -258,7 +260,7 @@ section .content a {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-	content: '';
+	content: "";
 	position: absolute;
 	display: none;
 }
@@ -284,3 +286,5 @@ section .content a {
 .index_fullpage__2JorV .index_content__6TMNN h1 {
 	margin-bottom: -80px;
 }
+
+/* Modal */
