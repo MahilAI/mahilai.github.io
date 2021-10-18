@@ -48,7 +48,7 @@ export const Hero = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
-		let link = "https://discord.gg/gnPhXybhxX";
+		let link = "https://chat.whatsapp.com/IpM54XUMq4i7CFHYJpqSUc";
 		window.location.href = link;
 	};
 	return (
